@@ -1,0 +1,1006 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SAVORÉ | Taste Something Beautiful</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <a href="#home" class="logo">
+        SAVOR<span>É</span>
+    </a>
+
+    <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#services">Services</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+
+        <button class="icon-btn" id="searchBtn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <button class="icon-btn" id="profileBtn">
+            <i class="fa-regular fa-user"></i>
+        </button>
+
+        <button class="cart-btn" id="cartBtn">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span id="cartCount">0</span>
+        </button>
+
+        <button class="menu-btn" id="menuBtn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- ================= MOBILE SIDEBAR ================= -->
+
+<div class="mobile-sidebar" id="mobileSidebar">
+
+    <div class="sidebar-header">
+        <h2>SAVORÉ</h2>
+        <button id="closeSidebar">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#services">Services</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+
+    <button class="sidebar-login" id="sidebarLogin">
+        Login / Sign Up
+    </button>
+
+</div>
+
+<div class="overlay" id="overlay"></div>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="eyebrow">
+            <i class="fa-solid fa-leaf"></i>
+            FRESH • TASTY • BEAUTIFUL
+        </p>
+
+        <h1>
+            Food made with
+            <span>love.</span>
+        </h1>
+
+        <p class="hero-text">
+            Discover delicious meals prepared with fresh ingredients,
+            beautiful flavors and a little bit of magic.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#menu" class="primary-btn">
+                Explore Menu
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a href="#about" class="secondary-btn">
+                Our Story
+            </a>
+        </div>
+
+        <div class="hero-info">
+
+            <div>
+                <strong>4.9</strong>
+                <span>★★★★★</span>
+                <small>2,000+ Reviews</small>
+            </div>
+
+            <div>
+                <strong>30 min</strong>
+                <small>Average Delivery</small>
+            </div>
+
+            <div>
+                <strong>100%</strong>
+                <small>Fresh Ingredients</small>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+
+        <div class="hero-circle"></div>
+
+        <img
+            src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=85"
+            alt="Healthy delicious food">
+
+        <div class="floating-card">
+            <div class="mini-icon">
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div>
+                <strong>Chef's Choice</strong>
+                <small>Fresh & delicious</small>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="categories">
+
+    <div class="section-heading center">
+        <p class="eyebrow">EXPLORE</p>
+        <h2>What are you craving?</h2>
+    </div>
+
+    <div class="category-grid">
+
+        <button class="category-card active" data-category="all">
+            <span>🍽️</span>
+            <strong>All</strong>
+            <small>Everything</small>
+        </button>
+
+        <button class="category-card" data-category="pizza">
+            <span>🍕</span>
+            <strong>Pizza</strong>
+            <small>Cheesy & hot</small>
+        </button>
+
+        <button class="category-card" data-category="burger">
+            <span>🍔</span>
+            <strong>Burgers</strong>
+            <small>Juicy & tasty</small>
+        </button>
+
+        <button class="category-card" data-category="salad">
+            <span>🥗</span>
+            <strong>Healthy</strong>
+            <small>Fresh & light</small>
+        </button>
+
+        <button class="category-card" data-category="dessert">
+            <span>🍰</span>
+            <strong>Desserts</strong>
+            <small>Sweet moments</small>
+        </button>
+
+        <button class="category-card" data-category="drink">
+            <span>🥤</span>
+            <strong>Drinks</strong>
+            <small>Cool & fresh</small>
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about section" id="about">
+
+    <div class="about-image">
+
+        <img
+            src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1000&q=85"
+            alt="Chef cooking">
+
+        <div class="experience-card">
+            <strong>12+</strong>
+            <span>Years of<br>Experience</span>
+        </div>
+
+    </div>
+
+    <div class="about-content">
+
+        <p class="eyebrow">OUR STORY</p>
+
+        <h2>
+            Good food brings
+            <span>people together.</span>
+        </h2>
+
+        <p>
+            At SAVORÉ, we believe food is more than just a meal.
+            It's an experience, a memory and a reason to gather around
+            the table.
+        </p>
+
+        <p>
+            Our chefs combine traditional recipes with modern ideas
+            to create dishes that are beautiful, fresh and full of flavor.
+        </p>
+
+        <div class="about-features">
+
+            <div>
+                <i class="fa-solid fa-seedling"></i>
+                <div>
+                    <strong>Fresh Ingredients</strong>
+                    <small>Locally sourced produce</small>
+                </div>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-utensils"></i>
+                <div>
+                    <strong>Expert Chefs</strong>
+                    <small>Passion in every plate</small>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="#menu" class="primary-btn">
+            Discover Our Menu
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MENU ================= -->
+
+<section class="menu-section section" id="menu">
+
+    <div class="section-heading">
+
+        <div>
+            <p class="eyebrow">OUR MENU</p>
+            <h2>Popular dishes</h2>
+        </div>
+
+        <p>
+            Handpicked favorites made fresh just for you.
+        </p>
+
+    </div>
+
+    <div class="food-grid" id="foodGrid">
+
+        <!-- PIZZA -->
+
+        <article class="food-card" data-category="pizza">
+
+            <div class="food-image">
+                <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&q=85"
+                     alt="Margherita Pizza">
+
+                <button class="favorite">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <span class="food-tag">BESTSELLER</span>
+            </div>
+
+            <div class="food-info">
+                <div class="food-title">
+                    <h3>Truffle Margherita</h3>
+                    <strong>₹449</strong>
+                </div>
+
+                <p>
+                    San Marzano tomato, fresh mozzarella,
+                    basil & truffle oil.
+                </p>
+
+                <div class="food-bottom">
+                    <span>★★★★★ <small>4.9</small></span>
+
+                    <button class="add-cart"
+                            data-name="Truffle Margherita"
+                            data-price="449">
+                        <i class="fa-solid fa-plus"></i>
+                        Add
+                    </button>
+                </div>
+            </div>
+
+        </article>
+
+
+        <!-- BURGER -->
+
+        <article class="food-card" data-category="burger">
+
+            <div class="food-image">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=85"
+                     alt="Classic Burger">
+
+                <button class="favorite">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+            </div>
+
+            <div class="food-info">
+                <div class="food-title">
+                    <h3>Savoré Classic</h3>
+                    <strong>₹349</strong>
+                </div>
+
+                <p>
+                    Double smashed beef, cheddar, caramelized
+                    onions & house sauce.
+                </p>
+
+                <div class="food-bottom">
+                    <span>★★★★★ <small>4.8</small></span>
+
+                    <button class="add-cart"
+                            data-name="Savoré Classic"
+                            data-price="349">
+                        <i class="fa-solid fa-plus"></i>
+                        Add
+                    </button>
+                </div>
+            </div>
+
+        </article>
+
+
+        <!-- SALAD -->
+
+        <article class="food-card" data-category="salad">
+
+            <div class="food-image">
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=85"
+                     alt="Fresh Salad">
+
+                <button class="favorite">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <span class="food-tag healthy">HEALTHY</span>
+            </div>
+
+            <div class="food-info">
+                <div class="food-title">
+                    <h3>Garden Glow</h3>
+                    <strong>₹299</strong>
+                </div>
+
+                <p>
+                    Avocado, cherry tomatoes, greens,
+                    feta & lemon dressing.
+                </p>
+
+                <div class="food-bottom">
+                    <span>★★★★★ <small>4.9</small></span>
+
+                    <button class="add-cart"
+                            data-name="Garden Glow"
+                            data-price="299">
+                        <i class="fa-solid fa-plus"></i>
+                        Add
+                    </button>
+                </div>
+            </div>
+
+        </article>
+
+
+        <!-- PASTA -->
+
+        <article class="food-card" data-category="all">
+
+            <div class="food-image">
+                <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=800&q=85"
+                     alt="Creamy Pasta">
+
+                <button class="favorite">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+            </div>
+
+            <div class="food-info">
+                <div class="food-title">
+                    <h3>Creamy Alfredo</h3>
+                    <strong>₹399</strong>
+                </div>
+
+                <p>
+                    Handmade pasta, parmesan, garlic,
+                    cream & cracked black pepper.
+                </p>
+
+                <div class="food-bottom">
+                    <span>★★★★★ <small>4.7</small></span>
+
+                    <button class="add-cart"
+                            data-name="Creamy Alfredo"
+                            data-price="399">
+                        <i class="fa-solid fa-plus"></i>
+                        Add
+                    </button>
+                </div>
+            </div>
+
+        </article>
+
+
+        <!-- DESSERT -->
+
+        <article class="food-card" data-category="dessert">
+
+            <div class="food-image">
+                <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&q=85"
+                     alt="Chocolate Dessert">
+
+                <button class="favorite">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <span class="food-tag">NEW</span>
+            </div>
+
+            <div class="food-info">
+                <div class="food-title">
+                    <h3>Choco Cloud</h3>
+                    <strong>₹249</strong>
+                </div>
+
+                <p>
+                    Warm chocolate cake, vanilla cream
+                    & chocolate crumble.
+                </p>
+
+                <div class="food-bottom">
+                    <span>★★★★★ <small>4.9</small></span>
+
+                    <button class="add-cart"
+                            data-name="Choco Cloud"
+                            data-price="249">
+                        <i class="fa-solid fa-plus"></i>
+                        Add
+                    </button>
+                </div>
+            </div>
+
+        </article>
+
+
+        <!-- DRINK -->
+
+        <article class="food-card" data-category="drink">
+
+            <div class="food-image">
+                <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&q=85"
+                     alt="Fresh drink">
+
+                <button class="favorite">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+            </div>
+
+            <div class="food-info">
+                <div class="food-title">
+                    <h3>Berry Fizz</h3>
+                    <strong>₹199</strong>
+                </div>
+
+                <p>
+                    Fresh berries, sparkling water,
+                    lime & mint.
+                </p>
+
+                <div class="food-bottom">
+                    <span>★★★★★ <small>4.8</small></span>
+
+                    <button class="add-cart"
+                            data-name="Berry Fizz"
+                            data-price="199">
+                        <i class="fa-solid fa-plus"></i>
+                        Add
+                    </button>
+                </div>
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section class="services section" id="services">
+
+    <div class="section-heading center">
+        <p class="eyebrow">WHY SAVORÉ</p>
+        <h2>Made for every moment</h2>
+        <p>
+            From a quick lunch to a special celebration,
+            we've got your table covered.
+        </p>
+    </div>
+
+    <div class="services-grid">
+
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fa-solid fa-motorcycle"></i>
+            </div>
+            <h3>Fast Delivery</h3>
+            <p>
+                Hot, fresh food delivered straight to
+                your doorstep in no time.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fa-solid fa-bowl-food"></i>
+            </div>
+            <h3>Fresh Food</h3>
+            <p>
+                We use premium ingredients sourced
+                fresh every single day.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fa-solid fa-champagne-glasses"></i>
+            </div>
+            <h3>Private Events</h3>
+            <p>
+                Make your celebrations memorable
+                with our private dining experience.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fa-solid fa-headset"></i>
+            </div>
+            <h3>24/7 Support</h3>
+            <p>
+                Our friendly team is always ready
+                to help whenever you need us.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TESTIMONIAL ================= -->
+
+<section class="testimonial section">
+
+    <div class="testimonial-content">
+
+        <p class="eyebrow">CUSTOMER LOVE</p>
+
+        <h2>
+            "Every bite feels like
+            a little celebration."
+        </h2>
+
+        <p class="review">
+            “The food arrived beautifully packed and
+            tasted absolutely incredible. The truffle
+            pizza is now officially my favorite!”
+        </p>
+
+        <div class="reviewer">
+            <img src="https://i.pravatar.cc/100?img=47"
+                 alt="Customer">
+
+            <div>
+                <strong>Emily Carter</strong>
+                <span>Verified Customer</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="testimonial-image">
+        <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1000&q=85"
+             alt="Beautiful restaurant food">
+    </div>
+
+</section>
+
+
+<!-- ================= BLOG ================= -->
+
+<section class="blog section" id="blog">
+
+    <div class="section-heading">
+
+        <div>
+            <p class="eyebrow">FROM THE BLOG</p>
+            <h2>Food & stories</h2>
+        </div>
+
+        <a href="#" class="text-link">
+            View all articles
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+    <div class="blog-grid">
+
+        <article class="blog-card">
+
+            <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=900&q=85"
+                 alt="Healthy food">
+
+            <div class="blog-content">
+                <span>FOOD GUIDE</span>
+                <h3>5 simple ways to eat better every day</h3>
+                <p>
+                    Small changes that can make a big difference
+                    to your everyday meals.
+                </p>
+                <a href="#">Read Story →</a>
+            </div>
+
+        </article>
+
+        <article class="blog-card">
+
+            <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=85"
+                 alt="Restaurant">
+
+            <div class="blog-content">
+                <span>OUR KITCHEN</span>
+                <h3>Behind the scenes at SAVORÉ</h3>
+                <p>
+                    Meet our chefs and discover what makes
+                    our kitchen special.
+                </p>
+                <a href="#">Read Story →</a>
+            </div>
+
+        </article>
+
+        <article class="blog-card">
+
+            <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=900&q=85"
+                 alt="Dinner table">
+
+            <div class="blog-content">
+                <span>LIFESTYLE</span>
+                <h3>How to create the perfect dinner</h3>
+                <p>
+                    Turn an ordinary evening into
+                    something worth remembering.
+                </p>
+                <a href="#">Read Story →</a>
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact section" id="contact">
+
+    <div class="contact-info">
+
+        <p class="eyebrow">GET IN TOUCH</p>
+
+        <h2>Let's talk<br><span>food.</span></h2>
+
+        <p>
+            Have a question, feedback or just want
+            to say hello? We'd love to hear from you.
+        </p>
+
+        <div class="contact-details">
+
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>123 Food Street, Jaipur, India</span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <span>+91 98765 43210</span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <span>hello@savore.com</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <form class="contact-form" id="contactForm">
+
+        <input type="text"
+               placeholder="Your Name"
+               required>
+
+        <input type="email"
+               placeholder="Your Email"
+               required>
+
+        <textarea
+            placeholder="Tell us what's on your mind..."
+            rows="5"
+            required></textarea>
+
+        <button type="submit" class="primary-btn">
+            Send Message
+            <i class="fa-solid fa-paper-plane"></i>
+        </button>
+
+    </form>
+
+</section>
+
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+    <div>
+        <p class="eyebrow">STAY HUNGRY</p>
+        <h2>Get delicious updates.</h2>
+    </div>
+
+    <form id="newsletterForm">
+
+        <input
+            type="email"
+            placeholder="Enter your email"
+            required>
+
+        <button type="submit">
+            Subscribe
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </form>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-main">
+
+        <div class="footer-brand">
+
+            <a href="#home" class="logo">
+                SAVOR<span>É</span>
+            </a>
+
+            <p>
+                Beautiful food.<br>
+                Beautiful moments.
+            </p>
+
+            <div class="socials">
+
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-column">
+            <h4>Explore</h4>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#services">Services</a>
+        </div>
+
+        <div class="footer-column">
+            <h4>Company</h4>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+            <a href="#">Careers</a>
+            <a href="#">Privacy</a>
+        </div>
+
+        <div class="footer-column">
+            <h4>Opening Hours</h4>
+            <p>Mon - Fri</p>
+            <strong>10:00 AM - 11:00 PM</strong>
+            <p>Sat - Sun</p>
+            <strong>09:00 AM - 12:00 AM</strong>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <span>© 2026 SAVORÉ. All rights reserved.</span>
+        <span>Made with ♥ for food lovers.</span>
+    </div>
+
+</footer>
+
+
+<!-- ================= CART SIDEBAR ================= -->
+
+<div class="cart-sidebar" id="cartSidebar">
+
+    <div class="cart-header">
+        <div>
+            <p class="eyebrow">YOUR ORDER</p>
+            <h2>Shopping Bag</h2>
+        </div>
+
+        <button id="closeCart">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+
+        <div class="empty-cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <h3>Your bag is empty</h3>
+            <p>Add something delicious!</p>
+        </div>
+
+    </div>
+
+    <div class="cart-footer">
+
+        <div class="subtotal">
+            <span>Subtotal</span>
+            <strong id="cartTotal">₹0</strong>
+        </div>
+
+        <button class="checkout-btn" id="checkoutBtn">
+            Proceed to Checkout
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ================= SEARCH MODAL ================= -->
+
+<div class="modal" id="searchModal">
+
+    <div class="search-box">
+
+        <button class="modal-close" id="closeSearch">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <p class="eyebrow">SEARCH SAVORÉ</p>
+
+        <h2>What are you craving?</h2>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search pizza, burger, dessert...">
+
+        <div id="searchResults"></div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= LOGIN MODAL ================= -->
+
+<div class="modal" id="authModal">
+
+    <div class="auth-box">
+
+        <button class="modal-close" id="closeAuth">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="auth-logo">SAVOR<span>É</span></div>
+
+        <h2 id="authTitle">Welcome back</h2>
+
+        <p id="authSubtitle">
+            Login to continue your delicious journey.
+        </p>
+
+        <form id="authForm">
+
+            <div id="nameField" class="hidden-field">
+                <input type="text" placeholder="Full Name">
+            </div>
+
+            <input
+                type="email"
+                placeholder="Email Address"
+                required>
+
+            <input
+                type="password"
+                placeholder="Password"
+                required>
+
+            <button class="primary-btn full-btn" type="submit">
+                <span id="authButtonText">Login</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </form>
+
+        <p class="switch-auth">
+            <span id="switchText">Don't have an account?</span>
+            <button id="switchAuth">Sign Up</button>
+        </p>
+
+    </div>
+
+</div>
+
+
+<div class="toast" id="toast">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastMessage">Added to cart!</span>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```
